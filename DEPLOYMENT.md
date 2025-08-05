@@ -27,8 +27,8 @@
 ## Live Deployment URLs
 
 ### Render (Primary)
-- **URL**: [Will be provided after deployment]
-- **Status**: Ready for deployment
+- **URL**: https://ai-agent-server-owa0.onrender.com
+- **Status**: ✅ LIVE AND WORKING
 - **Config**: render.yaml included
 
 ### Railway (Alternative)
@@ -58,31 +58,31 @@ Content-Type: application/json
 
 ### 1. Basic Conversation
 ```bash
-curl -X POST https://your-deployed-url.com/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "Hello! Tell me about TypeScript best practices.",
-    "session_id": "demo-session"
+    "sessionId": "demo-session"
   }'
 ```
 
 ### 2. Math Plugin
 ```bash
-curl -X POST https://your-deployed-url.com/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "Calculate 25 * 4 + 15",
-    "session_id": "demo-session"
+    "sessionId": "demo-session"
   }'
 ```
 
 ### 3. Weather Plugin
 ```bash
-curl -X POST https://your-deployed-url.com/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "What is the weather like in Bangalore?",
-    "session_id": "demo-session"
+    "sessionId": "demo-session"
   }'
 ```
 

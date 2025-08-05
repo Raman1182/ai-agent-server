@@ -58,41 +58,45 @@ npm run build
 npm start
 ```
 
+## Live Demo
+
+**🌐 LIVE URL**: https://ai-agent-server-owa0.onrender.com
+
 ## API Usage
 
 ### Send Message to Agent
 ```bash
-curl -X POST http://localhost:3000/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "What are TypeScript best practices?",
-    "session_id": "user-123"
+    "sessionId": "user-123"
   }'
 ```
 
 ### Weather Plugin Example
 ```bash
-curl -X POST http://localhost:3000/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "What is the weather in Bangalore?",
-    "session_id": "user-123"
+    "sessionId": "user-123"
   }'
 ```
 
 ### Math Plugin Example
 ```bash
-curl -X POST http://localhost:3000/agent/message \
+curl -X POST https://ai-agent-server-owa0.onrender.com/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "Calculate 2 + 2 * 5",
-    "session_id": "user-123"
+    "sessionId": "user-123"
   }'
 ```
 
 ### Health Check
 ```bash
-curl http://localhost:3000/health
+curl https://ai-agent-server-owa0.onrender.com/health
 ```
 
 ## Plugin System

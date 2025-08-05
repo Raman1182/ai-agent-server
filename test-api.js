@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'https://ai-agent-server-owa0.onrender.com';
 
 async function testAPI() {
   console.log('Testing AI Agent API...\n');
