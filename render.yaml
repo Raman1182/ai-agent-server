@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ai-agent-server
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: OPENWEATHER_API_KEY
+        sync: false  # Optional - set in Render dashboard
